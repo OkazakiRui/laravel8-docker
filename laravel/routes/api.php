@@ -18,7 +18,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::post('/login', [UserController::class, "login"]);
-Route::middleware("auth:sanctum")->group(function () {
+Route::middleware(['auth:sanctum'])->group(function () {
   Route::apiResource("todos", TodoController::class)->only([
     "index", "store", "show", "update", "destroy"
   ]);

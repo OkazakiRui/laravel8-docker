@@ -10,6 +10,7 @@ class TodoController extends Controller
     public function index()
     {
         // Todo
+        return "get req ok!";
         return Auth::user()->todo()->get();
     }
 

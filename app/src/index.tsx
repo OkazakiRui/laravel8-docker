@@ -1,11 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-render(
-  // error を出すために必要
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
